@@ -1,6 +1,3 @@
-
-import { String } from 'typescript-string-operations';
-
 export class ObjectArray<T> {
     private _values: T[] = [];
     private _length: number;
@@ -95,7 +92,8 @@ export class ObjectArray<T> {
     toString(): string {
         let out = "";
         this._values.forEach((v,i) => {
-            out += String.Format("i = {0} v = {1}\n", i, v.toString());
+            out += "i = " + i + " ";
+            out += "v = " + v.toString() + "\n";
         })
         return out;
     }
