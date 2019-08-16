@@ -59,12 +59,12 @@ person.value().age = 20;            // (*person).name = "20";
 console.log(person.toString());
 
 let person5: ObjectArray<Person> = person.subarray(5); // Person * person5 = &person[5];
-person5.value().name = "liu";   // (*person5).name = "gao";
+person5.value().name = "liu";   // (*person5).name = "liu";
 person5.value().age = 40;       // (*person5).age = 40;
 person5.value(1).name = "gao";  // person5[1].name = "gao";
 person5.value(1).age = 50;      // person5[1].age = 50;
 person5.seek(2);                // person5 += 2;
-person5.value().name = "zhao";  // person5[0].name = "gao";
+person5.value().name = "zhao";  // person5[0].name = "zhao";
 person5.value().age = 30;       // person5[0].age = 30;
 console.log(person.toString());
 ```
